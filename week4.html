@@ -26,7 +26,7 @@
 					<nav id="nav">
 						<ul class="links">
 							
-							<li class="active"><a href="finalproject.html">Final Project</a></li>
+							<li class="active"><a href="week4.html">WEEK 4</a></li>
 							
 						</ul>
 						<ul class="icons">
@@ -47,15 +47,37 @@
 									<h1>WEEK <br />
 									4</h1>
 									<h1>Ultrasonic Sensor-Based Alarm System for Blind Navigation</h1>
-									<p>Our project utilizes an Arduino microcontroller, an ultrasonic sensor, and a buzzer to create an effective obstacle detection and alarm system.</P>
-									<p>The ultrasonic sensor detects objects within a certain range, triggering the buzzer to emit an audible alarm when an obstacle is detected. </p>
-									<p> This system aims to assist blind individuals in navigating their surroundings safely by providing real-time feedback about obstacles, enhancing their independence and mobility. </p>
-									<p>With potential future developments such as integration into assistive devices and customization options, this technology holds promise for improving the lives of blind individuals and fostering inclusivity in our communities.</p>
+									<p>Our project utilizes an Arduino microcontroller, an ultrasonic sensor, and a buzzer to create an effective obstacle detection and alarm system.The ultrasonic sensor detects objects within a certain range, triggering the buzzer to emit an audible alarm when an obstacle is detected. This system aims to assist blind individuals in navigating their surroundings safely by providing real-time feedback about obstacles, enhancing their independence and mobility. With potential future developments such as integration into assistive devices and customization options, this technology holds promise for improving the lives of blind individuals and fostering inclusivity in our communities.</p>
 								</header>
 								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<h2>Introduction and Process</h2>
+								<h2>Introduction and Process:</h2>
 								<p>Blindness or visual impairment presents significant challenges in navigation and obstacle avoidance for individuals. In response, technologies leveraging ultrasonic sensors and audible alarms have been developed to assist blind individuals in navigating their surroundings safely. This project aims to create a simple yet effective ultrasonic sensor-based alarm system using Arduino, with potential future implications for aiding blind people in navigation.</p>
-								 
+								<h2>Project Description:</h2>
+								<p>The project utilizes an Arduino microcontroller connected to an ultrasonic sensor and a buzzer. The ultrasonic sensor detects objects within a certain range, and when an object is detected, the buzzer emits an audible alarm, alerting the user to the presence of obstacles.</p>
+								<h2>Components:</h2>
+								<p>Arduino Uno or similar microcontroller board
+                                                                   Ultrasonic sensor (e.g., HC-SR04)
+                                                                   Buzzer
+                                                                   Connecting wires
+                                                                   Breadboard (optional)</p>
+								<h2>Circuit Setup:</h2>
+								<p>Ensure you connect the components according to the diagram:
+
+Connect the VCC pin of the ultrasonic sensor to the 5V pin of the Arduino.
+Connect the GND pin of the ultrasonic sensor to the GND pin of the Arduino.
+Connect the Trig pin of the ultrasonic sensor to pin 9 on the Arduino.
+Connect the Echo pin of the ultrasonic sensor to pin 10 on the Arduino.
+Connect the Anode (longer leg) of the buzzer to pin 11 on the Arduino.
+Connect the Cathode (shorter leg) of the buzzer to the GND pin of the Arduino.</p>
+								<h2>Circuit Diagram</h2>
+								<div class="image main"><img src="" alt="" /></div>
+								<h2>Functionality:</h2>
+								<p>The ultrasonic sensor emits ultrasonic waves and measures the time taken for the waves to bounce back.
+Based on the measured time, the Arduino calculates the distance to the object in front of it.
+If the distance is below a predefined threshold (e.g., 50 cm), indicating the presence of an obstacle, the buzzer is activated, emitting an audible alarm.
+The alarm stops when the obstacle is no longer detected.</p>
+								
+								
 							</section>
 
 					</div>
