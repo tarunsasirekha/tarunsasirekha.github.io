@@ -46,13 +46,43 @@
 									<span class="date">April 25, 2017</span>
 									<h1>Intergrated<br />
 									Project</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p></p>
 								</header>
 								<div class="image main"><img src="images/dd.jpeg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<p>Introducing our self-leveling drone, a remarkable integration of cutting-edge technology and meticulous craftsmanship. Powered by a versatile array of sources, from wall plugs to LiPo batteries and USB power banks, it ensures uninterrupted operation in diverse environments. Precision-engineered wiring, featuring heat shrink insulation, ribbon cables, and secure screw terminals, guarantees reliable connectivity and optimal performance. The heart of this drone lies in its meticulously designed PCB, boasting either single or double-sided configurations and modular stacking headers for seamless integration of electronic components. Its robust mechanical construction, incorporating heat-set inserts and captive nuts, ensures structural integrity and durability, even under demanding flight conditions. With meticulous attention to detail in every aspect of its design and assembly, our self-leveling drone sets the standard for innovation and excellence in aerial technology.</p>
+								<div class="image main"><img src="images/wire.jpeg" alt="" /></div>
+								<div class="image main"><img src="images/wire 1.jpeg" alt="" /></div>
+								<h1>3 Receiver and gyro check</h1>
+								<p>To make sure that everything is working correct it's necessary to run some basic checks. Remove the props, disconnect the flight battery and upload the ESC calibration program to the Arduino. Open the serial monitor at 57600baud.</p>
+								<h2>3.1 Receiver input check</h2>
+								<p>Send the letter 'r' to start the receiver monitor. Now move the sticks and see if the values on the screen correspond with the movements of the sticks.</p>
+								<p>All the channels should read 1000us till 2000us with a center position of 1500 (+/-8).</p>
+								<div class="image main"><img src="images/ecs reciver.png" alt="" /></div>
+								<h2>3.2 Gyro / accelerometer angle check</h2>
+								<p>After the receiver check is completed send the letter 'a' to start the angle check</p>
+								<p>Don't move the quadcopter because the gyro needs to calibrate itself. After the calibration the roll and pitch angles are shown. The yaw value is the output of the gyro and will go back to zero if the yaw rotation stops.</p>
+								<p>Check if the angles correspond with the movement of the quadcopter:</p>
+								<ul>
+									<li>Nose up is positive pitch and nose down is negative pitch.</li>
+									<li>Left wing up is positive roll and left wing down is negative roll</li>
+									<li>Nose right is positive yaw and nose left is negative yaw.</li>
+								</ul>
+								<div class="image main"><img src="images/ecs angle.png" alt="" /></div>
+
+								<h1>4 Calibrate the ESC's</h1>
+								<p>Electronic speed controllers or ESC's for short are controlled with a 1000us till 2000us pulse. 1000us means off and 2000us means full throttle. To make sure that all the ESC's react the same way it's important to calibrate the 1000us and 2000us point. Without calibration the motors will perform different and the quadcopter doesnt fly well or might even crash.</p>
+								<p>Remove the props and upload the ESC calibration program to the Arduino. Disconnect the USB cable and follow the instructions in the manual to calibrate the ESC's.</p>
+								<p>In most cases this is done with the following steps:
+
+Place the throttle stick in the upper position (full throttle)
+Connect the flight battery
+After some beeps place the throttle stick in the lowest position
+									
+Disconnect the flight battery</p>
+								<h2>Code for Callibrating ECS</h2>
+								<iframe src="https://app.arduino.cc/sketches/bd706922-de80-4786-8807-45f892f90fc6?view-mode=embed" style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe />
+         
+
 							</section>
 
 					</div>
