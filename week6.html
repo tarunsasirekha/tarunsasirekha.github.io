@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Final Project</title>
+		<title>Week 6</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,7 +26,7 @@
 					<nav id="nav">
 						<ul class="links">
 							
-							<li class="active"><a href="finalproject.html">Final Project</a></li>
+							<li class="active"><a href="week 6.html">week 6</a></li>
 							
 						</ul>
 						<ul class="icons">
@@ -43,16 +43,65 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>Final<br />
-									Project</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									
+									<h1>Electronic Input<br />
+									Devices</h1>
+									<p>Electronic input devices are components or systems that enable the transfer of data or commands from the physical world into electronic systems. These devices play a crucial role in various applications, from simple button presses on a keyboard to complex sensor readings in environmental monitoring systems. Input devices detect and convert different forms of physical stimuli, such as touch, light, sound, or motion, into electrical signals that can be processed by electronic circuits or microcontrollers. Examples of electronic input devices include buttons, switches, sensors (such as temperature sensors, proximity sensors, or accelerometers), keyboards, mice, microphones, cameras, and more. These devices facilitate interaction between humans and machines, allowing users to provide instructions, data, or feedback to electronic systems for processing, control, or analysis.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<div class="image main"><img src="images/eid.webp" alt="" /></div>
+								<h2>Capacitive Sensor Implementation:</h2>
+								<p>To create a capacitive sensor with a microcontroller, we'll utilize a technique known as capacitive sensing. Capacitive sensing relies on the principle that the capacitance of an electrode changes when it is brought close to a conductive object, such as a human finger. We'll measure this change in capacitance to detect proximity or touch.</p>
+								<p>Components Required:</p>
+								<ul>
+									<li>Microcontroller </li>
+									<li>Capacitive sensing electrode</li>
+									<li>Resistors (for pull-up or pull-down configuration)</li>
+								</ul>
+								<h2>Resistive Soil Moisture Sensor:</h2>
+								<p>Resistive soil moisture sensors operate on the principle that the electrical resistance of the sensor changes with the amount of water present in the soil. Here's how they typically work:</p>
+								<p>A resistive soil moisture sensor usually consists of two or more metallic electrodes embedded in a porous material such as ceramic or gypsum. The porous material allows water to penetrate and come into contact with the electrodes.</p>
+								<p>When the soil is dry, the electrical resistance between the electrodes is high because water, being a good conductor, is absent or minimal. As the soil moisture increases, more water comes into contact with the electrodes, decreasing the resistance between them.</p>
+								<p>To calibrate a resistive soil moisture sensor, you would typically measure its resistance at different moisture levels: dry, moist, and wet. By correlating these resistance values with actual soil moisture levels, you can establish a calibration curve or equation.</p>
+								<h2>Capacitive Soil Moisture Sensor:</h2>
+								<p>Capacitive soil moisture sensors measure the dielectric constant of the soil, which changes with varying moisture content. Here's how they generally work:</p>
+								<p>A capacitive soil moisture sensor typically consists of two conductive plates separated by a dielectric material (the soil). When the soil is dry, it has a lower dielectric constant, resulting in lower capacitance between the plates. As the soil moisture increases, the dielectric constant of the soil increases, leading to higher capacitance.</p>
+								<p>The probe of a capacitive soil moisture sensor usually includes electrodes or plates that are buried in the soil. These electrodes interact with the soil's dielectric properties to measure capacitance.</p>
+								<p>Calibration of a capacitive soil moisture sensor involves measuring its capacitance at different moisture levels and correlating these values with actual soil moisture content. This calibration process helps establish a relationship between sensor output (capacitance) and soil moisture levels.</p>
+
+								<h2>Adding Soil Moisture Sensor and LED Output:</h2>
+								<p>Let's incorporate a soil moisture sensor to measure soil moisture levels. We'll use an LED as an output device to indicate the moisture leve</p>
+								<div class="image main"><img src="images/soil sensor.png" alt="" /></div>
+								<p>added from internet as i did not have the photo</p>
+								<div class="image main"><img src="images/soil.jpg" alt="" /></div>
+								<iframe src="https://app.arduino.cc/sketches/d2ab6a54-7d5a-41e8-a944-c5322dc6a944?view-mode=embed" style="height:510px;width:100%;margin:10px 0" frameborder=0 />
+
+								<h2>Calibration and Signal Relationship:</h2>
+									<p>For calibration, you would typically collect data points by varying the physical quantity being measured (e.g., soil moisture levels) and recording corresponding sensor readings. By plotting these points on a graph, you can observe the relationship between the sensor readings and the physical quantity.</p>
+									<p>For soil moisture sensors, the relationship between the sensor reading (analog value) and the actual moisture content in the soil is usually nonlinear. Initially, you might measure soil moisture at various levels (dry, moist, wet) and plot these points. Then, you can use techniques like curve fitting to establish a mathematical relationship between the sensor readings and the actual moisture content.</p>
+									<p>Similarly, for capacitive sensors, the relationship between the measured capacitance and the proximity of an object is nonlinear and depends on various factors like sensor design and environment. Calibrating by measuring capacitance at different distances from the sensor can help understand this relationship better.</p>
+									<iframe src="https://app.arduino.cc/sketches/a0be8c97-b34a-464a-9511-9864423de7da?view-mode=embed" style="height:510px;width:100%;margin:10px 0" frameborder=0 />
+										<div class="image main"><img src="images/graph 1.png" alt="" /></div>
+										<div class="image main"><img src="images/graph 2.png" alt="" /></div>
+
+									<h2>Comparison</h2>
+										<p>Sensitivity: Capacitive soil moisture sensors are generally more sensitive to changes in soil moisture compared to resistive sensors. They can detect small variations in moisture content.</p>
+										<p>Corrosion Resistance: Capacitive sensors are often more resistant to corrosion because they don't rely on direct contact with the soil for measurement, unlike resistive sensors.</p>
+										<p>Calibration: Both types of sensors require calibration to establish accurate relationships between sensor readings and soil moisture levels. Calibration ensures that the sensor output corresponds reliably to actual soil conditions.</p>
+										<h1>Article used to understand</h1>
+								<ul>
+									<li><a href="https://circuitdigest.com/microcontroller-projects/interfacing-soil-moisture-sensor-with-arduino-uno">   Soil Sensor</a></li>
+									<li><a href="https://www.digikey.com/en/maker/tutorials/2021/how-to-add-capacitive-sensing-to-any-arduino-project">Capcitive sensor</a></li>
+									<li><a href="https://www.instructables.com/How-To-Use-Touch-Sensors-With-Arduino/">Capcitive touch sensor</a></li>
+									<li><a href="https://lastminuteengineers.com/soil-moisture-sensor-arduino-tutorial/">Resistive soil sensor </a></li>
+								</ul>
+										<h2>Summary</h2>
+										<p>In summary, resistive and capacitive soil moisture sensors offer different measurement principles and characteristics, but both are valuable tools for monitoring soil moisture levels in various applications. The choice between them depends on factors such as sensitivity requirements, environmental conditions, and cost considerations.
+
+
+
+
+
+</p>
 							</section>
 
 					</div>
